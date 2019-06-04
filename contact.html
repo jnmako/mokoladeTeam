@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <link rel="stylesheet"
+          href="/css/style.css">
+    <title>Kapcsolat</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html"><img id="go-home"
+                 src="/img/home.png"
+                 alt="mokoládé"></a>
+
+        <h1 class="other-header">Kapcsolat</h1>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li class="nav-list"><a class="nav-anchor"
+                   href="/index.html">Főoldal</a></li>
+            <li class="nav-list"><a class="nav-anchor"
+                   href="/about-us.html">Rólunk</a></li>
+            <li class="nav-list"><a class="nav-anchor"
+                   href="/lectures.html">Okosságok</a></li>
+            <li class="nav-list"><a class="nav-anchor, active"
+                   href="/contact.html">Kapcsolat</a></li>
+            <li class="nav-list"><a class="nav-anchor"
+                   href="/array.html">Feladat</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="main-contact">
+            <h2>Elérhetőségeink</h2>
+            <hr>
+            <table class="table-contact">
+                <tr>
+                    <td>
+                        <label for="tel">&#128222;</label>
+                    </td>
+                    <td>
+                        <a href="tel.:+36303456789"
+                           id="tel">
+                            (+36 30) 345-6789
+                        </a>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">&#128231;</label>
+                    </td>
+                    <td>
+                        <a href="mailto:mokoladek@gmail.com"
+                           id="email">
+                            mokoladek@gmail.com
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hour">&#128338;</label>
+                    </td>
+                    <td>
+                        <p>9:00-17:00</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="location">&#x1f4cc;</label>
+                    </td>
+                    <td>
+                        <b>Training360 oktatóközpont</b>
+                        <p>South Buda Business Park irodaház</p>
+                        <p>1117 Budapest, Budafoki út 56. 3. emelet</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.4717595474112!2d19.05091431626595!3d47.46123560600063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dda08d6f129d%3A0x5ed4479e3031e66e!2sTraining360+Kft.!5e0!3m2!1shu!2shu!4v1553508879644"
+                                frameborder="1"
+                                style="border:1"
+                                allowfullscreen=""></iframe>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+
+
+        <h2 id="write-to-us">Írj nekünk!</h2>
+
+        <form action="mailto:mokoladek@gmail.com"
+              subject="subject"
+              style="text-align: left">
+
+            <table class="table-contact">
+                <tr>
+                    <th>
+                        <label for="name">Név:</label>
+                    </th>
+                    <td>
+                        <input type="text"
+                               name="name"
+                               id="name"
+                               placeholder="pl.: Kiss Béla"
+                               required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="mail">E-mail cím:</label>
+                    </th>
+                    <td>
+                        <input type="email"
+                               name="mail"
+                               id="mail"
+                               placeholder="pl.: kiss.béla@gmail.com"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="subject">Téma:</label>
+                    </th>
+                    <td>
+                        <input type="text"
+                               name="subject"
+                               id="subject"
+                               placeholder="pl.: kérdések">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <label for="message">Üzenet:</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="message"
+                                  id="message"
+                                  cols="70"
+                                  rows="10"
+                                  placeholder="pl.: Hogy lett ilyen jó az oldalatok?"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+
+
+    </main>
+
+    <footer>
+        <p id="footer-contact"
+           class="footer-element"><strong>Elérhetőségeink</strong></p>
+        <br>
+        <label for="tel2">&#128222;</label>
+        <a href="tel.:+36303456789"
+           id="tel2">+36(30) 345-6789</a>
+        <br>
+        <label for="email2">&#128231;</label>
+        <a href="mailto:mokoladek@gmail.com"
+           id="email2">mokoladek@gmail.com</a> <br>
+        <p class="footer-element">Training360 Oktatóközpont</p>
+        <p class="footer-element">South Buda Business Park irodaház</p>
+        <p class="footer-element">1117 Budapest, Budafoki út 56. 3. emelet</p>
+
+    </footer>
+
+</body>
+
+</html>

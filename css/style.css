@@ -1,0 +1,200 @@
+       body {
+           background-color: grey;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+
+       header {
+           background-color: red;
+           margin: 0px;
+           padding: 0px;
+       }
+
+       h1 {
+           margin: 0px;
+       }
+
+
+       #main-title {
+           text-align: center;
+           position: relative;
+           vertical-align: middle;
+           font-size: 80px;
+           margin-block-start: 0px;
+           margin-block-end: 0px;
+           color: white;
+       }
+
+       h1.other-header {
+           text-align: center;
+           font-size: 80px;
+           color: white;
+       }
+
+       #go-home {
+           float: left;
+           left: 0px;
+           top: 0px;
+           width: 50px;
+           height: 50px;
+       }
+
+       #navigation {
+           list-style-type: none;
+           text-align: center;
+           /* overflow: hidden; */
+           background-color: blueviolet;
+           font-size: 20px;
+           margin: 0px;
+       }
+
+       /* Eltávolítja a bullet pontokat az UNORDERED LIST listaelemek elől, illetve a margint és paddinget. Középre helyezi az elemeket. */
+
+       .nav-list {
+           display: inline-block;
+           padding: 5px;
+           border-right: 1px solid white;
+       }
+
+       /* Vízszintesen egymás mellé helyezi az elemeket. A border right 1px széles határt húz a jobb oldalra.*/
+
+       .nav-list:last-child {
+           border-right: none;
+       }
+
+       /* A listaelemek utolsó eleme után nem húz határt. */
+
+
+       .nav-anchor {
+           display: block;
+           color: whitesmoke;
+           text-decoration: none;
+
+       }
+
+       .nav-anchor:hover {
+           background-color: blue;
+           cursor: pointer;
+       }
+
+       .active {
+           background-color: white;
+           text-decoration: none;
+       }
+
+       hr {
+           border: 5px solid red;
+       }
+
+       div.main-elements {
+           text-align: center;
+           margin: 30px;
+       }
+
+       h1.main-headings {
+           margin-bottom: 15px;
+       }
+
+       #team-pic {
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           margin-bottom: 30px;
+           width: 50%;
+           height: 300px;
+           width: 399px;
+           border-radius: 10px;
+       }
+
+       #pic-text {
+           margin-top: 30px;
+           margin-bottom: 30px;
+       }
+
+       #project-pic {
+           height: 300px;
+           widows: 284px;
+           margin-left: 30em;
+           border-radius: 10px;
+       }
+
+       #project-division {
+           margin-right: 30em;
+           float: right;
+       }
+
+       #second-heading {
+           margin-bottom: 15px;
+       }
+
+       /* footer {
+           position: relative;
+           height: 80px;
+           background: black;
+           color: white;
+           margin: 0px;
+       } */
+
+
+       #contact-us {
+           font-size: 20px;
+       }
+
+
+       #follow-us {
+           font-size: 20px;
+       }
+
+       #table-us {
+           margin: auto;
+       }
+
+       #write-to-us {
+           text-align: center
+       }
+
+       .table-contact {
+           margin-left: auto;
+           margin-right: auto;
+       }
+
+       footer {
+           text-align: center;
+           color: white;
+           background-color: black;
+       }
+
+       .footer-element {
+           margin: 5px;
+       }
+
+       #footer-contact {
+           font-size: 20px;
+       }
+
+       #main-contact {
+           text-align: center;
+       }
+
+       /* table-contact {
+           margin: auto;
+       } */
+
+       #team-exercise {
+           text-align: center;
+       }
+
+       div.persons {
+           border-style: inset;
+       }
+
+       .lecture-headings {
+           text-align: center;
+       }
+
+       .us-pictures {
+           border-radius: 20px;
+       }
+
+       #fun {
+           text-align: center;
+       }

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <link rel="stylesheet"
+          href="css/style.css">
+    <title>Okosságok</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html"><img id="go-home"
+                 src="/img/home.png"
+                 alt="mokoládé"></a>
+
+        <h1 class="other-header">Okosságok</h1>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li class="nav-list"><a class="nav-anchor"
+                   href="/index.html">Főoldal</a></li>
+            <li class="nav-list"><a class="nav-anchor"
+                   href="/about-us.html">Rólunk</a></li>
+            <li class="nav-list"><a class="nav-anchor, active"
+                   href="/lectures.html">Okosságok</a></li>
+            <li class="nav-list"><a class="nav-anchor"
+                   href="/contact.html">Kapcsolat</a></li>
+            <li class="nav-list"><a class="nav-anchor"
+                   href="/array.html">Feladat</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <h2>Tartalom</h2>
+        <ol>
+            <li>
+                <a href="#html-trivia">A HTML-ről</a>
+                <ol>
+                    <li>
+                        <a href="#html-grammar">Helyesírás</a>
+                    </li>
+                    <li>
+                        <a href="#html-structure">Felépítés</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="#js-trivia">A JavaScriptről</a>
+            </li>
+            <li>
+                <a href="#misc-trivia">Hasznos kiegészítők</a>
+                <ol>
+                    <li>
+                        <a href="#vsc-plugins">VSCode plugins</a>
+                    </li>
+                    <li>
+                        <a href="#clean-code">Clean code</a>
+                    </li>
+                    <li>
+                        <a href="#zen-programming">Zen programming</a>
+                    </li>
+                    <li>
+                        <a href="#useful-websites">Hasznos weboldalak</a>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </aside>
+    <main>
+        <hr>
+        <div class="heading">
+            <!--teljes tartalom-->
+            <h2 id="html-trivia"
+                class="lecture-headings">Amit a HTML-ről tudni kell</h2>
+            <!--HTML-->
+            <p><strong>A HTML a HyperText Markup Language</strong> (hiperszöveg leírónyelv) rövidítése. Az a
+                nyelv, amelynek segítségével weboldalakat lehet létrehozni.
+                Szabványosítását egy független szervezet, a World Wide Web Consortium (W3C) végzi. <br>
+                A W3C az interneten elérhető a <a href="https://www.w3.org/">https://www.w3.org</a> címen.
+            </p>
+            <p>Egy HTML-oldal folyamatos ASCII-szöveget tartalmaz, amelyet az oldal tartalma és a
+                megjelenítéséhez szükséges elemek vegyesen alkotnak. Az oldal végső formája a böngészőben
+                jelenik meg (alakul ki), mert az értelmezi ezeket a megjelenítést szabályozó
+                elemeket.Ezek az elemek a tag-ek (ejtsd: “tegek”). A tag-eket tulajdonságokkal lehet
+                ellátni,
+                ezek az attribútumok.</p>
+            <p>Formailag a tag-eket az attribútumaikkal együtt hegyes
+                zárójelek közé "&lt; &gt;" kell írni. A tag-ek többsége két részből áll: egy
+                nyitótag-ből pl.<code>&lt;HTML&gt;</code> és egy zárótag-ből pl.<code>&lt;/HTML&gt;</code>,
+                amelyek között a formázandó,megjelenítendő stb. tartalmi rész van (az, amire a tag
+                vonatkozik,
+                ill. amit megjelenít). A tag-eket egymásba lehet ágyazni.</p>
+            <ol>
+                <!--helyesírás és felépítés-->
+                <li>
+                    <h3 id="html-grammar">Helyesírás</h3>
+                    <ul>
+                        <li>kis- és nagybetű nem megkülönböztetett,</li>
+                        <li>szövegtagolás: a forráskódban található ismételt szóközöket és sortöréseket nem
+                            veszi figyelembe a böngésző. (Csak egy szóközt fog megjeleníteni, mindegy,
+                            hogy mennyi szerepel a forrásban).</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 id="html-structure">Felépítás</h3>
+                    <h4>Egy HTML állomány három fő részre bontható:</h4>
+                    <ol>
+                        <li> A Dokumentum Típus Definíció az állomány legelején, pl: <code>&lt;!DOCTYPE
+                                html&gt;</code></li>
+                        <li> a HTML fejléc <code>&lt;head&gt;&lt;/head&gt;</code>, ami technikai és
+                            dokumentációs adatokat tartalmaz, amelyeket az internet böngésző nem jelenít
+                            meg,
+                            tehát
+                            átlag
+                            felhasználó ezeket nem látja és a HTML törzs</li>
+                        <li><code>&lt;body&gt;&lt;/body&gt;</code>, amely a megjelenítendő információkat
+                            tartalmazza.
+                            Tehát egy internetes oldal alapszerkezete a következőképpen nézhet ki:</li>
+                    </ol>
+                    <img src="/img/html_main_tag.jpg"
+                         alt="HTML felépítése"
+                         height="300"
+                         width="600">
+                </li>
+            </ol>
+            <hr>
+            <h2 id="js-trivia"
+                class="lecture-headings">Mi az a JavaScript?</h2>
+            <!--JavaScript-->
+            <ul>
+                <li>
+                    <p>A JavaScript egy objektum alapú programozási nyelv, melyet a Netscape fejlesztett ki
+                        eredetileg
+                        LiveScript néven. A LiveScript és a Java ötvözéséből alakult ki a JavaScript, melyet
+                        először a
+                        Netscape Navigator 2.0-ban implementáltak. Sokan nevezik a nyelvetobjektum
+                        orientáltnak,
+                        ami
+                        azonban nem teljesen igaz, hiszen olyan alapvető tulajdonságok, mint például az
+                        öröklődés,
+                        hiányoznak belőle. A JavaScript a Java appletektől és a Java programoktól eltérően
+                        futásidőben
+                        kerül értelmezésre. Tehát a böngésző letölti az oldalt, megjeleníti a tartalmát,
+                        majd
+                        értelmezi
+                        a JavaScript (vagy más nyelven írt scriptek) sorait. Már most fontos leszögezni,
+                        hogy a
+                        JavaScript nem Java! Szintaktikájában és felépítésében ugyan nagyon hasonlít a nevét
+                        adó
+                        proramozási nyelvre, azonban lehetőségei sokkal korlátozottabbak.</p>
+                </li>
+                <li>
+                    <h3>A JavaScript megalkutásanak története:</h3>
+                    <p><strong>A következő videóban Brendan Eich meséli el, hogy hogyan alakult meg a
+                            JavaScript</strong> </p>
+                    <iframe width="956"
+                            height="538"
+                            src="https://www.youtube.com/embed/3-9fnjzmXWA"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </li>
+            </ul>
+            <hr>
+            <h2 id="misc-trivia"
+                class="lecture-headings">Hasznos kiegészítők</h2>
+            <!--Kiegészítők-->
+            <ol>
+                <li>
+                    <h3 id="vsc-plugins">VSCode pluginek</h3>
+                    <!--VSCode-->
+                    <ul>
+                        <li>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag">Auto
+                                Close Tag</a>
+                            <p>Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime
+                                Text does.</p>
+                        </li>
+                        <li>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">Auto
+                                Rename Tag</a>
+                            <p>Automatically rename paired HTML/XML tag, same as Visual Studio IDE does.</p>
+                        </li>
+                        <li>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint">HTMLHint</a>
+                            <p>VS Code integration for HTMLHint - A Static Code Analysis Tool for HTML</p>
+                        </li>
+                        <li>
+                            <a
+                               href="https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap">htmltagwrap</a>
+                            <p>Wraps your selection in HTML tags. Can wrap inline selections and selections
+                                that
+                                span multiple lines (works with both single selections and multiple
+                                selections
+                                at once). <br>
+                                To use, select one or many chunks of code and press "Alt + W" ("Option + W"
+                                for Mac).</p>
+                        </li>
+                        <li>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-attrs-sorter">Sorting
+                                HTML and Jade attributes</a>
+                            <p>Sorting of the tag attributes in the specified order. <br>
+                                You can use global keyboard shortcut ALT+SHIFT+F or right-click context menu
+                                Format.<br>
+                                Or press F1 and run the command named Sorting of the tag attributes
+                                (attrs-sorter).
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 id="clean-code">Clean code</h3>
+                    <!--Clean coding-->
+                    <h4>Pár alapelv kiemelése a teljesség igénye nélkül:</h4>
+                    <ul>
+                        <li>Az egyszerűségre, következetességre és olvashatóságra való törekvés jellemezze
+                            kódunkat!
+                        </li>
+                        <li>Variánsok nevénél törekedjünk az egyszerű olvashatóságra és kimondásra!</li>
+                        <li>Elnevezésnél figyeljünk arra, hogy a választott név tükrözze a szándékot!</li>
+                        <li>Ha megjegyzésekben magyarázni kell a kódunkat, már régen rossz. Írjuk át azt,
+                            hogy
+                            egyértelmű legyen!</li>
+                        <li>Ne hardcode-oljunk semmit! Definiáljunk konstansokat vagy haszbáljunk
+                            variánsokat
+                            helyette!</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 id="zen-programming">Zen programming</h3>
+                    <h4>10 alapelvet emelhetünk ki:</h4>
+                    <!--Zen programing-->
+                    <ol>
+                        <li>Teljes fókusz munka közben</li>
+                        <li>Tiszta elme</li>
+                        <li>Egy kezdő hozzáállása</li>
+                        <li>Az egónak nincs helye itt</li>
+                        <li>Ne a karriercélok motiváljanak, hogy a legjobbat hozd ki magadból a munkahelyen
+                        </li>
+                        <li>Tanulj meg hallgatni</li>
+                        <li>3 fő erény: éberség, gondoskodás, tudatosság</li>
+                        <li>Nincs főnök</li>
+                        <li>Foglalkozz mással is; legyen valamilyen hobbid</li>
+                        <li>Senki sem különleges</li>
+                    </ol>
+                </li>
+                <li>
+                    <h3 id="useful-websites">Hasznos weboldalak</h3>
+                    <!--hasznos weboldalak-->
+                    <p>Kattints a képre, mely elnavigál ezekre az oldalakra!</p>
+                    <ol>
+                        <li>
+                            <a href="https://www.training360.com/">
+                                <img src="/img/t360_logo_cmyk.jpg"
+                                     alt="training360"
+                                     height="110"
+                                     width="250">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/">
+                                <img src="/img/w3.jpg"
+                                     alt="w3school"
+                                     height="110"
+                                     width="110">
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                               href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">
+                                <img src="/img/mdn.png"
+                                     alt="MDN">
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <h4>Források:</h4>
+            <cite>
+                <a href="https://marketplace.visualstudio.com/vscode">VStudio Marketplace</a><br>
+                <a href="https://simpleprogrammer.com/clean-code-principles-better-programmer/">SimpleProgrammer</a><br>
+                <a href="https://www.zenprogrammer.org/en/10-rules-of-a-zen-programmer.html">ZenProgrammer</a><br>
+            </cite>
+        </div>
+        <hr>
+
+
+        <div id="fun">
+            <div>
+                <p>
+                    IT-s poénok:
+                    <button onclick="fun()">Kérj egy viccet!</button>
+                </p>
+            </div>
+            <div>
+                <form action="mailto:mokoladek@gmail.com"
+                      method="POST">
+                    <label id="feedbackUsefulness">Megtaláltad, amit kerestél?</label>
+                    <input type="button"
+                           name="feedbackUsefulness-00"
+                           value="Igen">
+                    <input type="button"
+                           name="feedbackUsefulness-01"
+                           value="Nem">
+                </form>
+            </div>
+        </div>
+
+        <br>
+
+    </main>
+
+    <footer>
+        <p id="footer-contact"
+           class="footer-element"><strong>Elérhetőségeink</strong></p>
+        <br>
+        <label for="tel2">&#128222;</label>
+        <a href="tel.:+36303456789"
+           id="tel2">+36(30) 345-6789</a>
+        <br>
+        <label for="email2">&#128231;</label>
+        <a href="mailto:mokoladek@gmail.com"
+           id="email2">mokoladek@gmail.com</a> <br>
+        <p class="footer-element">Training360 Oktatóközpont</p>
+        <p class="footer-element">South Buda Business Park irodaház</p>
+        <p class="footer-element">1117 Budapest, Budafoki út 56. 3. emelet</p>
+
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
